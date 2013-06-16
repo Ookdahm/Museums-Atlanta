@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.androidsfuture.museumsatlanta" android:versionName="2.0.5" android:versionCode="26">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+     <application android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:icon="@drawable/museum_48">
+     	<uses-library android:name="com.google.android.maps" />
+        <activity android:name=".Main"
+                  android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+		
+		<activity android:name=".Maps" android:theme="@android:style/Theme.NoTitleBar"></activity>
+
+    	<activity android:name=".Tabs" android:configChanges="keyboard|keyboardHidden|orientation" android:screenOrientation="unspecified"></activity>
+		<activity android:name=".Collections" android:configChanges="keyboard|keyboardHidden|orientation" android:screenOrientation="unspecified"></activity>
+		<activity android:name=".Events" android:configChanges="keyboard|keyboardHidden|orientation" android:screenOrientation="unspecified"></activity>
+		<activity android:name=".Membership" android:configChanges="keyboard|keyboardHidden|orientation" android:screenOrientation="unspecified"></activity>
+		<activity android:name=".Parking" android:configChanges="keyboard|keyboardHidden|orientation" android:screenOrientation="unspecified"></activity>
+
+	
+
+<activity android:name=".MuseumItem" android:configChanges="keyboard|keyboardHidden|orientation" android:screenOrientation="unspecified"></activity>
+
+<!-- AdMobActivity definition -->
+<activity android:name="com.google.ads.AdActivity"
+              android:configChanges="keyboard|keyboardHidden|orientation"/>
+              
+<activity android:name=".Maps" android:theme="@android:style/Theme.NoTitleBar"></activity>
+<activity android:name=".MapsArt" android:theme="@android:style/Theme.NoTitleBar"></activity>
+<activity android:name=".MapsFree" android:theme="@android:style/Theme.NoTitleBar"></activity>
+<activity android:name=".MapsHistory" android:theme="@android:style/Theme.NoTitleBar"></activity>
+<activity android:name=".MapsMansion" android:theme="@android:style/Theme.NoTitleBar"></activity>
+<activity android:name=".MapsScience" android:theme="@android:style/Theme.NoTitleBar"></activity>
+
+</application>
+    <uses-sdk android:minSdkVersion="4" />
+
+
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+</manifest> 
